@@ -1,4 +1,5 @@
 /*
+Lab05 - Número primo foi digitado [Q4]
 Faça um programa que recebe números inteiros positivos do usuário enquanto o usuário digita valores diferentes de zero.
 Ao final do seu programa, imprima a mensagem Número primo digitado se o usuário digitou algum número primo.
 Caso contrário, imprima a mensagem Número primo não digitado.
