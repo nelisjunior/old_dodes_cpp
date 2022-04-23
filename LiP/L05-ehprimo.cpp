@@ -13,31 +13,35 @@ int main()
 {
     setlocale(LC_ALL, "Portuguese");
 
-    int x=1, contprimo=0, ehprimo, verprimo=0;
+    int x = 1, contprimo = 0, ehprimo, verprimo = 0;
 
-
-    while(x!=0){
+    while (x != 0)
+    {
         cin >> x;
-        ehprimo=1+x;
+        ehprimo = 1 + x;
 
-        for(int i=1;i<=x;i++){
-            if(x%i==0){
-                verprimo+=i;
+        for (int i = 1; i <= x; i++)
+        {
+            if (x % i == 0)
+            {
+                verprimo += i;
             }
         }
-        if(verprimo==ehprimo){
+        if (verprimo == ehprimo)
+        {
             contprimo++;
         }
-        verprimo=0;
+        verprimo = 0;
     }
 
-    if(contprimo>=1){
+    if (contprimo >= 1)
+    {
         cout << "Número primo digitado!" << endl;
     }
-    else{
+    else
+    {
         cout << "Nenhum número primo foi digitado!" << endl;
     }
 
-
-return 0;
+    return 0;
 }

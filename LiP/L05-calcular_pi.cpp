@@ -1,4 +1,4 @@
-/* 
+/*
 Lab05 - Calcular valor de Pi [Q2]
 Comandos de Repetição 2
 Calcule o valor de Pi com a série infinita. Pi= 4 - 4/3 + 4/5 - 4/7 + 4/9 - 4/11 + 4/N ...
@@ -11,36 +11,42 @@ Leve em consideração os seguintes pontos:
     Utilize variáveis do tipo double para as variáveis que representem números reais
 
 */
-    #include <iostream>
-    #include <iomanip>
+#include <iostream>
+#include <iomanip>
 
-    using namespace std;
+using namespace std;
 
-    int main(){
-        cout << setprecision(8);
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    
+    cout << setprecision(8);
 
-        int n, cont=1, i=1;
-        double Pi;
+    int n, cont = 1, i = 1;
+    double Pi;
 
-        cin >> n;
+    cin >> n;
 
-        if(n>=1){
-            do{
-            Pi+=(4.0/i);
-            i+=2;
+    if (n >= 1)
+    {
+        do
+        {
+            Pi += (4.0 / i);
+            i += 2;
             cont++;
-                if(cont<=n){
-                    Pi-=(4.0/i);
-                    i+=2;
-                    cont++;
-                }
-                else{
-                    break;
-                }
-            }while(cont<=n);
-
-        }
-        cout << Pi << endl;
-
-        return 0;
+            if (cont <= n)
+            {
+                Pi -= (4.0 / i);
+                i += 2;
+                cont++;
+            }
+            else
+            {
+                break;
+            }
+        } while (cont <= n);
     }
+    cout << Pi << endl;
+
+    return 0;
+}

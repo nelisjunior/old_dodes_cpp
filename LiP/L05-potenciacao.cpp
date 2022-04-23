@@ -8,8 +8,10 @@ O programa deve imprimir na tela o valor da operação b^e.
 
 using namespace std;
 
-int main(){
-
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    
     int b, e;
     double result;
 

@@ -8,40 +8,52 @@ Escreva um programa que estima o valor de e² usando a expressão a seguir:
 #include <iomanip>
 using namespace std;
 
-double fatorial(int x, int n){
-    double fatn=n;
+double fatorial(int x, int n)
+{
+    double fatn = n;
 
-        for(int i=1; i <= n; i++){
-            fatn=fatn*(fatn-i);
-            //soma+=(pow(x,i)/fatn);
-        }
-        return fatn;
+    for (int i = 1; i <= n; i++)
+    {
+        fatn = fatn * (fatn - i);
+        // soma+=(pow(x,i)/fatn);
+    }
+    return fatn;
 }
 
-double euler(int x, int n, double fatn){
-    double soma=0;
+double euler(int x, int n, double fatn)
+{
+    double soma = 0;
 
-    for(int i =1; i<= n; i++){
-        soma+=(pow(x,i)/fatn);
+    for (int i = 1; i <= n; i++)
+    {
+        soma += (pow(x, i) / fatn);
     }
 
     return soma;
 }
 
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    
+    int x = 0, n = 0;
+    double e, fatn = 0;
 
-int main(){
-   int x=0, n=0;
-   double e, fatn;
+    cout << "Informe o valor de X: " << endl;
+    cin >> x;
+    cout << "Informe o valor de n: " << endl;
+    cin >> n;
 
-   cin >> x >> n;
-
-    if(n==0 || n==1){
-        e=1+pow(x,1)/1;
-    }else{
-        e=1+euler(x, n, fatn);
+    if (n == 0 || n == 1)
+    {
+        e = 1 + pow(x, 1) / 1;
     }
-   
-    cout << "Para N = " << n <<"; e^x = "<< setprecision(7) << e << endl;
+    else
+    {
+        e = 1 + euler(x, n, fatn);
+    }
+
+    cout << "Para N = " << n << "; e^x = " << setprecision(7) << e << endl;
 
     return 0;
 }
