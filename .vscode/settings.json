@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "*.rmd": "markdown",
-        "iostream": "cpp"
-    },
-    "files.exclude": {
-        "**/.vscode": true
-    }
-}
