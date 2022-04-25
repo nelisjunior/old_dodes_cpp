@@ -1,8 +1,8 @@
 /*
-Lab05 - PotenciaÃ§Ã£o [Q1]
-Escreva um programa que leia dois nÃºmeros inteiros b e e, denotando respectivamente uma base e um expoente.
-O programa deve imprimir na tela o valor da operaÃ§Ã£o b^e.
-(potenciaÃ§Ã£o).
+Lab05 - Potenciação [Q1]
+Escreva um programa que leia dois números inteiros b e e, denotando respectivamente uma base e um expoente.
+O programa deve imprimir na tela o valor da operação b^e.
+(potenciação).
 */
 #include <iostream>
 
@@ -29,7 +29,7 @@ int main()
         }
         
 
-        cout << result << endl;
+        cout << "Resultado de " << b << "^" << e << " = " << result << endl;
 
         return 0;
     }

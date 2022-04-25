@@ -12,7 +12,8 @@ using namespace std;
 
 int main()
 {
-
+    setlocale(LC_ALL, "Portuguese");
+    
     int idadep1, idadep2;
     char sexop1, sexop2;
     string m="masculino", f="feminino";

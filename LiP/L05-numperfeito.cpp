@@ -1,9 +1,9 @@
 /*
-Lab05 - NÃºmero Perfeito [Q3]
+Lab05 - Númeromero Perfeito [Q3]
 
-Escreva um programa que lÃª um nÃºmero inteiro positivo e determina se esse nÃºmero Ã© perfeito ou nÃ£o,
-sabendo-se que um nÃºmero Ã© perfeito se ele Ã© igual ao dobro da soma dos seus divisores.
-Por exemplo 6 Ã© perfeito, jÃ¡ que 2*6 = 1 + 2 + 3 + 6.
+Escreva um programa que ler um número inteiro positivo e determina se esse número é perfeito ou não,
+sabendo-se que um número é perfeito se ele é igual ao dobro da soma dos seus divisores.
+Por exemplo 6 é perfeito, já que 2*6 = 1 + 2 + 3 + 6.
 */
 #include <iostream>
 
@@ -33,11 +33,11 @@ int main()
     }
     if (perfeito == verificador)
     {
-        cout << x << " Ã© perfeito" << endl;
+        cout << x << " é perfeito" << endl;
     }
     else
     {
-        cout << x << " nÃ£o Ã© perfeito" << endl;
+        cout << x << " não é perfeito" << endl;
     }
     return 0;
 }

@@ -9,17 +9,18 @@ Crie um programa que receba um valor em decimal do usuário, e retorna a parte i
 
 using namespace std;
 
-int main() {
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    
+  float x = 0, fracao = 0;
+  int inteiro = 0;
 
-    float x=0, fracao=0;
-    int inteiro=0;
+  cin >> x;
 
-    cin >> x;
+  inteiro = x / 10;
 
-    inteiro = x / 10;
-
-    fracao = x%10;
-
+  fracao = x % 10;
 
   return 0;
 }

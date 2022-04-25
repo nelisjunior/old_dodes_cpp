@@ -1,31 +1,38 @@
 /*
-Lab03 - Comandos de seleÃ§Ã£o [Q3]
-RaÃ­zes de polinÃ´mio de 2o. grau
+Lab03 - Comandos de seleção [Q3]
+Raíes de polinômio de 2o. grau
 
-Implemente um programa que receba como entrada 3 nÃºmeros reais  diferentes de 0 referentes aos coeficientes de um polinÃ´mio de segundo grau axÂ² + bx + c = 0. O programa deve exibir uma mensagem informando se o polinÃ´mio possui 2 raÃ­zes reais distintas, 2 raÃ­zes reais iguais ou 2 raÃ­zes complexas, de acordo com o valor de delta: caso delta seja positivo, o polinÃ´mio possui duas raÃ­zes reais distintas; caso seja negativo, o polinÃ´mio possui duas raÃ­zes complexas; caso seja zero, o polinÃ´mio possui duas raÃ­zes reais iguais. Lembre-se do valor de Delta= bÂ² - 4ac.
+Implemente um programa que receba como entrada 3 números reais  diferentes de 0 referentes aos coeficientes de um polinômio de segundo grau ax² + bx + c = 0. O programa deve exibir uma mensagem informando se o polinômio possui 2 raíes reais distintas, 2 raíes reais iguais ou 2 raíes complexas, de acordo com o valor de delta: caso delta seja positivo, o polinômio possui duas raíes reais distintas; caso seja negativo, o polinômio possui duas raíes complexas; caso seja zero, o polinômio possui duas raíes reais iguais. Lembre-se do valor de Delta= b² - 4ac.
 */
 #include <iostream>
 #include <cmath>
 
 using namespace std;
 
-int main() {
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    
     double a, b, c, delta;
 
     cin >> a >> b >> c;
 
-    if(a!=0){
-        delta=(b*b)-(4*a*c);
-        if(delta<0){
-            cout << "Duas raizes complexas";
+    if (a != 0)
+    {
+        delta = (b * b) - (4 * a * c);
+        if (delta < 0)
+        {
+            cout << "Duas raíes complexas";
         }
-        else if(delta>0){
-            cout << "Duas raizes reais distintas";
+        else if (delta > 0)
+        {
+            cout << "Duas raíes reais distintas";
         }
-        else{
-            cout << "Duas raizes reais iguais";
+        else
+        {
+            cout << "Duas raíes reais iguais";
         }
     }
 
-  return 0;
+    return 0;
 }
